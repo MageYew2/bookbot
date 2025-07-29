@@ -29,8 +29,8 @@ def printreport(filepath):
     print("--------- Character Count -------")
     rawcounts = charactercount(fulltext)
     sortedcounts = countlist(rawcounts)
-    for entry in sortedcounts:
-        print(f"'{entry['char']}': {entry['num']}")
+    for counts in sortedcounts:
+        print(str(counts["char"]) + ": " + str(counts["num"]))
     print("============= END ===============")
 
 main()

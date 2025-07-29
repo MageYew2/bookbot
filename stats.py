@@ -18,8 +18,7 @@ def sort_on(count):
 def countlist(char_dict):
     report = []
     for char, count in char_dict.items():
-        if char.isalpha():
-            new_entry = {"char": char, "num": count}
-            report.append(new_entry)
+        new_entry = {"char": char, "num": count}
+        report.append(new_entry)
     report.sort(reverse=True, key=sort_on)
     return report
